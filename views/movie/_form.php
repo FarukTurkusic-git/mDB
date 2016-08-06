@@ -9,6 +9,13 @@ use app\models\Director;
 /* @var $model app\models\Movie */
 /* @var $form yii\widgets\ActiveForm */
 ?>
+<style>
+  #w0 {
+color: lightgreen;
+    }
+
+</style>
+
 <div class="col-md-6">
 <div class="movie-form">
 
