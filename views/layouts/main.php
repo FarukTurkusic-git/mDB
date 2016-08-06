@@ -21,10 +21,12 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <style>
-      body {background-color: #204060;}
+      body {
+        background-image: url("http://wallpapercave.com/wp/p4iaEa4.jpg");
+      }
       h1 {
-    color: lightgreen;
-}
+        color: #37A1FF;
+      }
 
     </style>
 </head>

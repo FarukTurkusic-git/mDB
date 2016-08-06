@@ -11,14 +11,14 @@ use app\models\Director;
 ?>
 <style>
   #w0 {
-color: lightgreen;
+color: #37A1FF;
     }
 
 </style>
 
-<div class="col-md-6">
-<div class="movie-form">
 
+<div class="movie-form">
+<div class="col-md-4">
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'movieName')->textInput(['maxlength' => true]) ?>
@@ -42,7 +42,7 @@ color: lightgreen;
       ArrayHelper::map(Director::find()->all(), 'directorID', 'FirstName')) ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-primary' : 'btn btn-primary','style' => 'width: 100%;']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
